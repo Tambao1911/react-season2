@@ -1,15 +1,17 @@
 import classNames from 'classnames/bind';
 import styles from './Nav.module.scss'
+import { NavLink } from 'react-router-dom';
 
 const cx = classNames.bind(styles)
 
 function Nav() {
     return (
         <div className={cx("topnav")}>
-            <a className={cx("active")} href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <NavLink className={({ isActive }) => isActive ? cx('active') : ''} to="/">Home</NavLink>
+            <NavLink className={({ isActive }) => isActive ? cx('active') : ''} to="/timer">Timer Apps</NavLink>
+            <NavLink className={({ isActive }) => isActive ? cx('active') : ''} to="/todo">Todo Apps</NavLink>
+            <NavLink className={({ isActive }) => isActive ? cx('active') : ''} to="/blog">Blog Apps</NavLink>
+            <NavLink className={({ isActive }) => isActive ? cx('active') : ''} to="/secret">Secret</NavLink>
         </div>
     );
 }

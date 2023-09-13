@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+  .blog {
+    border: 1px solid gray;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 3px;
+    max-width: 458px;
+    text-align: left !important;
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .body {
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  }
+}
