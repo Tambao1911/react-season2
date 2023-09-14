@@ -1,0 +1,115 @@
+.container {
+  border: 1px solid gray;
+  width: 400px;
+  border-radius: 4px;
+
+  .title {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+    color: gray;
+    border-bottom: 1px solid gray;
+  }
+
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    color: #ccc;
+
+    .index {
+      margin: -1px 0;
+      padding: 0 20px;
+      height: 40px;
+      font-size: 17px;
+      line-height: 40px;
+      border-right: 1px solid gray;
+    }
+
+    .name {
+      margin-right: auto;
+      line-height: 40px;
+      font-size: 17px;
+      padding: 0 10px;
+      max-width: 234px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #ddd;
+    }
+
+    button {
+      border: none;
+      border-left: 1px solid gray;
+      font-size: 15px;
+      background-color: transparent;
+      color: #ccc;
+
+      &:hover {
+        color: white;
+        background-color: gray;
+      }
+    }
+  }
+
+  .add-new-course {
+    margin: 8px 0;
+    button {
+      width: 350px;
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      padding: 4px 0;
+      border: 1px solid gray;
+      color: #ebb9b9;
+
+      &:hover {
+        color: white;
+        background-color: rgb(178, 159, 159);
+      }
+    }
+  }
+
+  .container-input {
+    display: flex;
+    justify-content: space-between;
+
+    .input {
+      border-left: 1px solid gray;
+      margin-left: auto;
+
+      input {
+        width: 292px;
+        padding: 3px 10px;
+        outline: none;
+      }
+    }
+
+    .btn-back {
+        border: none;
+        border-right: 1px solid gray;
+        background-color: #6f6060;
+        color: #f4dfdf;
+        width: 50px;
+        padding: 0;
+  
+        &:hover {
+          color: white;
+          background-color: gray;
+        }
+    }
+    
+    .btn-add {
+      border: none;
+      border-left: 1px solid gray;
+      background-color: #6f6060;
+      color: #f4dfdf;
+      width: 58px;
+
+      &:hover {
+        color: white;
+        background-color: gray;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { ToastContainer } from "react-toastify";
 import logo from "./logo.svg";
 import "./App.scss";
 import Nav from "./Layouts/components/Nav";
-import Todo from "./components/Todo";
+import Todo from "./Layouts/components/Todo";
 import TableUser from "./Layouts/components/TableUser";
 import CountDown from "./Layouts/CountDown";
 import Blog from "./Layouts/components/Blog";
