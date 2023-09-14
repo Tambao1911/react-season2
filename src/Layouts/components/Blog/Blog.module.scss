@@ -3,14 +3,18 @@
   flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: 10px;
   
   .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid gray;
     margin: 0 10px;
     padding: 10px;
     border-radius: 3px;
-    max-width: 458px;
-    text-align: left !important;
+    width: 479px;
+    text-align: left;
 
     .title {
       font-size: 20px;
@@ -20,6 +24,126 @@
     .body {
       padding: 10px 0;
       font-size: 14px;
+    }
+
+    .btn-blog {
+      text-align: center;
+
+      button {
+        width: 100%;
+        border: 1px solid gray;
+        background-color: transparent;
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 0;
+        
+        &:hover {
+          color: white;
+          background-color: gray;
+        }
+      }
+
+      button a {
+        width: 100%;
+        padding: 6px 0;
+        display: block;
+        text-decoration: none;
+        color: #ccc;
+        border-radius: 4px;
+      }
+
+      button:nth-child(2) {
+        margin-top: 10px;
+        padding: 6px 0;
+      }
+      
+    }
+  }
+  
+  button {
+    cursor: pointer;
+    color: #ccc;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 6px;
+
+    &:hover {
+      color: white;
+      background-color: gray;
+    }
+  }
+}
+
+.add-btn {
+  margin: 10px 0;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    color: #000;
+    background-color: white;
+  }
+}
+
+
+// Add New Blog
+
+.add-container {
+  border: 1px solid gray;
+  text-align: left;
+  .text-new-blog {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .input-title {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin:0  20px;
+    
+
+    label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    input {
+      padding: 4px 10px;
+      border: 1px solid gray;
+      border-radius: 4px;
+      outline: none;
+      margin-top: 4px;
+    }
+  }
+
+  .btn-add {
+    text-align: center;
+
+    button {
+      border: 1px solid #ccc;
+      color: #333;
+      font-size: 16px;
+      font-weight: 700;
+      background-color: transparent;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 250px;
+      padding: 6px 0;
+      margin-top: 30px;
+      margin-bottom: 10px ;
+
+      &:hover {
+        color: white;
+        background-color: gray;
+      }
     }
   }
 }
