@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classNames from "classnames/bind";
+import { toast } from "react-toastify";
 
 import styles from "./Todo.module.scss";
 
@@ -20,6 +21,7 @@ function Todo() {
 
     const handleSubmit = () => {
         if (!name) {
+            toast.error('Please Enter Course!')
             return;
         }
         setTodos([...todos, { id: Math.floor(Math.random() * 100), name: name }]);
@@ -33,7 +35,7 @@ function Todo() {
         setTodos(newTodo);
     };
 
-    const hideIput = () => {
+    const hideInputValue = () => {
         setHideInput(true);
     };
 
@@ -53,14 +55,14 @@ function Todo() {
             }
             {!hideInput && (
                 <div className={cx("add-new-course")}>
-                    <button onClick={hideIput}>Add New Course</button>
+                    <button onClick={hideInputValue}>Add New Course</button>
                 </div>
             )}
             {hideInput && (
                 <div className={cx('container-input')}>
                     <button className={cx("btn-back")} onClick={() => setHideInput(false)}>Back</button>
                     <div className={cx("input")}>
-                        <input value={name} type="text" onChange={(e) => handleChange(e)} />
+                        <input value={name} placeholder="Enter Course" type="text" onChange={(e) => handleChange(e)} />
                     </div>
                     <button className={cx("btn-add")} onClick={handleSubmit}>
                         Add

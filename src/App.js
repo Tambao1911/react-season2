@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 import logo from "./logo.svg";
 import "./App.scss";
 import Nav from "./Layouts/components/Nav";
@@ -9,7 +11,7 @@ import CountDown from "./Layouts/CountDown";
 import Blog from "./Layouts/components/Blog";
 import DetailBlog from "./Layouts/components/Blog/DetailBlog";
 import AddNewBlog from "./Layouts/components/Blog/AddNewBlog";
-import 'react-toastify/dist/ReactToastify.css';
+import YoutubeSearch from "./Layouts/components/YoutubeSearch";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
             <Route path='/timer' element={<CountDown />} />
             <Route path='/todo' element={< Todo />} />
             <Route path='/blog' element={< Blog />} />
-            <Route path='/secret' element={< Todo />} />
+            <Route path='/secret' element={< YoutubeSearch />} />
             <Route path='/blog/:id' element={< DetailBlog />} />
             <Route path='/addnewblog' element={< AddNewBlog />} />
             <Route path='*' element={< NotFound />} />

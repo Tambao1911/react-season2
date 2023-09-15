@@ -53,7 +53,8 @@
   }
 
   .add-new-course {
-    margin: 8px 0;
+    margin: 10px 0;
+    line-height: 20px;
     button {
       width: 350px;
       background-color: transparent;
@@ -73,11 +74,13 @@
   .container-input {
     display: flex;
     justify-content: space-between;
+    
 
     .input {
       border-left: 1px solid gray;
       margin-left: auto;
-
+      font-size: 14px;
+      
       input {
         width: 292px;
         padding: 3px 10px;
@@ -89,6 +92,7 @@
         border: none;
         border-right: 1px solid gray;
         background-color: #6f6060;
+        font-size: 15px;
         color: #f4dfdf;
         width: 50px;
         padding: 0;
@@ -102,6 +106,7 @@
     .btn-add {
       border: none;
       border-left: 1px solid gray;
+      font-size: 15px;
       background-color: #6f6060;
       color: #f4dfdf;
       width: 58px;
